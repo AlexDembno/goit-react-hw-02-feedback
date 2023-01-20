@@ -1,0 +1,13 @@
+.list {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
