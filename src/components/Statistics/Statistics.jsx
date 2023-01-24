@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import style from './Statistics.module.css';
 
 function Statistics({
@@ -10,7 +12,6 @@ function Statistics({
 }) {
   return (
     <>
-      <p className={style.text}>{text}</p>
       <ul className={style.list}>
         <li>
           <span className={style.span}>Good: {good}</span>
@@ -36,3 +37,12 @@ function Statistics({
 }
 
 export default Statistics;
+
+Statistics.propTypes = {
+  text: PropTypes.string.isRequired,
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.string.isRequired,
+};
