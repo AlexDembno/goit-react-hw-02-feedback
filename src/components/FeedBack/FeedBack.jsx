@@ -29,7 +29,6 @@ class FeedBack extends Component {
   };
 
   render() {
-    const { text } = this.props;
     const { good, neutral, bad } = this.state;
 
     return (
@@ -43,7 +42,6 @@ class FeedBack extends Component {
         <Section title="Statistics">
           {good || neutral || bad !== 0 ? (
             <Statistics
-              text={text}
               good={good}
               neutral={neutral}
               bad={bad}
